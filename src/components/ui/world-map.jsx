@@ -18,7 +18,7 @@ export default function WorldMap({
     radius: 0.22,
     color: theme === "dark" ? "#FFFFFF40" : "#00000040",
     shape: "circle",
-    backgroundColor: theme === "dark" ? "black" : "white",
+    backgroundColor: theme === "dark" ? "transparent" : "white",
   });
 
   const projectPoint = (lat, lng) => {

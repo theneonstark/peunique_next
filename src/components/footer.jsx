@@ -144,7 +144,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t">
           <p className="text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} Peunique. All rights reserved.
+            © {new Date().getFullYear()} Peunique Payment Solution. All rights reserved.
           </p>
         </div>
       </div>

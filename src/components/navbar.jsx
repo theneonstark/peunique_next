@@ -12,14 +12,16 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     (<header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6 mx-auto">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-[#0870e7]">Cashfree</span>
-          <span className="text-lg font-semibold">Payments</span>
+          {/* <span className="text-xl font-bold text-[#0870e7]">Cashfree</span>
+          <span className="text-lg font-semibold">Payments</span> */}
+          <Image src={'/logo.png'} width={100} height={100} />
         </Link>
 
         {/* Desktop Navigation */}
