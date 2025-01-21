@@ -1,101 +1,59 @@
-"use client";
 import React from "react";
 import { WavyBackground } from "./ui/wavy-background";
+import { Button } from "@/components/ui/button"
+
 
 export function WavyBackgroundDemo() {
   return (
     <WavyBackground className="max-w-full mx-auto">
-      {/* Hero Section */}
-      <section className="text-center py-16 px-4">
-        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold inter-var">
-          Empower Your Payments
-        </h1>
-        <p className="text-base md:text-lg mt-4 font-medium inter-var">
-          Experience seamless transactions with advanced payment solutions.
-        </p>
-        <button className="mt-6 px-6 py-3 bg-gray-100 rounded-lg shadow-lg font-semibold hover:bg-gray-200 transition duration-300">
-          Get Started
-        </button>
-      </section>
-
-      {/* Features Section */}
-      <section className="mt-20 px-6 lg:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Feature 1"
-              className="w-20 h-20 mb-4"
-            />
-            <h3 className="text-xl font-bold">Fast Payments</h3>
-            <p className="mt-2 text-sm">
-              Process payments in real-time with unmatched reliability.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Feature 2"
-              className="w-20 h-20 mb-4"
-            />
-            <h3 className="text-xl font-bold">Secure Transactions</h3>
-            <p className="mt-2 text-sm">
-              Your payments are protected with top-notch encryption.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Feature 3"
-              className="w-20 h-20 mb-4"
-            />
-            <h3 className="text-xl font-bold">Global Reach</h3>
-            <p className="mt-2 text-sm">
-              Accept payments from customers worldwide with ease.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="mt-20 px-6 lg:px-16 text-center">
-        <h2 className="text-2xl md:text-4xl font-bold">
-          Ready to Simplify Your Payments?
-        </h2>
-        <p className="mt-4 text-sm md:text-lg">
-          Join thousands of businesses using our platform for a seamless
-          payment experience.
-        </p>
-        <div className="mt-6 flex justify-center gap-4">
-          <button className="px-6 py-3 bg-gray-100 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
-            Learn More
-          </button>
-          <button className="px-6 py-3 bg-gray-100 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
-            Contact Us
-          </button>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="mt-20 px-6 lg:px-16">
-        <h2 className="text-center text-2xl md:text-4xl font-bold">
-          What Our Clients Say
-        </h2>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[1, 2, 3].map((i) => (
-            <div
-              key={i}
-              className="bg-gray-100 rounded-lg shadow-lg p-6 text-center">
-              <p className="text-sm">
-                "The platform is incredibly easy to use and has significantly
-                improved our payment processes."
-              </p>
-              <h4 className="mt-4 font-bold">John Doe</h4>
-              <p className="text-sm">CEO, Example Co.</p>
+      <section className="max-w-full mx-auto px-4 py-2">
+        <div className="flex flex-col md:flex-row items-center ">
+           <div className="flex flex-col gap-20">
+            <div className="mt-24 flex flex-col gap-2 ">
+              <h1 className="flex flex-col text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="block text-[#0870e7] mb-2">
+              Secure Payment Gateways
+              </span>
+              <span className="block">
+              Integration for Every Business
+              </span>
+            </h1>
+            <div className="flex m-4 items-center">
+            <h2>Simplify Online Payments</h2>
+            <span className="m-2 ">|</span>
+            <h2>Secure Transactions</h2>
+            <span className="m-2">|</span>
+            <h2>Transparent Pricing</h2>
             </div>
-          ))}
+            <div>
+               <div className="flex items-center gap-4">
+                        <Button variant="outline" className="hidden lg:flex">
+                          Sign in
+                        </Button>
+                        <Button className="bg-blue-600 hover:bg-blue-700">Create Account</Button>
+                      </div>
+          </div>
+            </div>
+            <div className="flex gap-10">
+              <h2 className="text-lg"><span className="text-2xl font-bold text-[#0870e7]">20+</span> Clients
+              </h2>
+              <h2 className="text-lg  "><span className="text-2xl font-bold text-[#0870e7]">Across 30+ </span>Countries</h2>
+              <h2 className="text-lg  "><span className="text-2xl font-bold text-[#0870e7]">Multiple </span>Resources</h2>
+            </div>
+          </div>
+          
+          <div className="md:w-1/2 relative h-[90vh]">
+            <img 
+              src="pemnoe.png" 
+              alt="Hero illustration" 
+              className="w-full h-[90vh] object-contain"
+            />
+            <img src="paymentbutton.gif" className="absolute z-30 bottom-6 left-32 size-60"/>
+          </div>
         </div>
       </section>
     </WavyBackground>
   );
 }
+
+export default WavyBackgroundDemo;
