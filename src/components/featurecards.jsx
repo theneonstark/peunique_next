@@ -10,17 +10,67 @@ export function Featurecards() {
     (<div
       className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+        containerClassName="col-span-1 lg:col-span-2  h-full bg-pink-800 min-h-[200px] lg:min-h-[300px]"
         className="">
+          <div className="flex items-center text-center justify-between">
+            
         <div className="max-w-xs">
           <h2
             className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Gippity AI powers the entire universe
+         150+ Payment Modes
           </h2>
           <p className="mt-4 text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+          Our platform offers over 150+ payment modes, including UPI, wallets, debit/credit cards, net banking, and more, giving your customers multiple convenient payment options.
+          </p> 
+        </div>
+        <div className="max-w-xs">
+          <h2
+            className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+             Customizable Payment Pages
+          </h2>
+          <p className="mt-4 text-left  text-base/6 text-neutral-200">
+              We enable businesses to customize payment pages to align with branding, improving user experience and increasing conversion rates.
+          </p> 
+        </div>
+              </div>
+      </WobbleCard>
+     
+      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+        <h2
+          className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+         Multi-Business Support
+        </h2>
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+        Whether you're in e-commerce, education, retail, B2B services, or any other sector, our solution is built to support all business types. We provide tailored payment gateway integration that fits seamlessly with any business model.
+        </p>
+       
+      </WobbleCard>
+      <WobbleCard
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-orange-800 min-h-[200px] lg:min-h-[300px]"
+        className="">
+            <div className="flex items-center text-center justify-between">
+            
+             <div className="max-w-xs">
+           <h2
+            className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+         Secure Transactions
+          </h2>
+          <p className="mt-4 text-left  text-base/6 text-neutral-200">
+          We prioritize security with advanced encryption and fraud prevention measures, ensuring your transactions are safe and secure from start to finish.
+
           </p>
+          </div>
+           
+        <div className="max-w-xs">
+          <h2
+            className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+        Instant Settlements
+          </h2>
+          <p className="mt-4 text-left  text-base/6 text-neutral-200">
+          We provide instant settlements, ensuring that you receive funds quickly, which is perfect for businesses needing cash flow flexibility.
+
+          </p>
+          </div>
         </div>
         <Image
           src="/linear.webp"
@@ -30,12 +80,14 @@ export function Featurecards() {
           className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl" />
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+    
         <h2
           className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          No shirt, no shoes, no weapons.
+         Seamless Integration
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          If someone yells “stop!”, goes limp, or taps out, the fight is over.
+        We offer easy API integration, with well-documented resources and a flexible system for developers to integrate our gateway into any platform—website, app, or custom solution.
+
         </p>
       </WobbleCard>
       <WobbleCard

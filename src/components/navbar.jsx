@@ -16,7 +16,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    (<header className="sticky top-0 z-50 w-full border-b bg-white">
+    (<header className="sticky top-0 w-full border-b bg-white" style={{zIndex: 9000}}>
       <div className="container flex h-16 items-center justify-between px-4 md:px-6 mx-auto">
         <Link href="/" className="flex items-center gap-2">
           {/* <span className="text-xl font-bold text-[#0870e7]">Cashfree</span>
@@ -28,7 +28,7 @@ export default function Navbar() {
         <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList className="gap-1">
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Payments</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Payment Modes</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="grid gap-3 p-6 w-[400px]">
                   <div className="flex items-center gap-3">
@@ -127,9 +127,10 @@ export default function Navbar() {
 
         {/* Auth Buttons */}
         <div className="flex items-center gap-4">
+         <Link href='/login'>
           <Button variant="ghost" className="hidden lg:flex">
             Sign in
-          </Button>
+          </Button></Link>
           <Button className="bg-[#0870e7] hover:bg-[#3b6fab]">Create Account</Button>
         </div>
       </div>

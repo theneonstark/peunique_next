@@ -23,7 +23,7 @@ export default function InfinitySlider() {
     if (!container) return;
 
     let start = 0;
-    const speed = 0.3; // Adjust scroll speed
+    const speed = 1; // Adjust scroll speed
     let animationFrameId;
 
     const scrollLogos = () => {
