@@ -30,7 +30,8 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuTrigger>Payment Modes</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid gap-3 p-6 w-[400px]">
+                <div className="grid grid-cols-4 gap-4 p-8 w-[700px]">
+                 
                   <div className="flex items-center gap-3">
                     <div
                       className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
@@ -47,8 +48,154 @@ export default function Navbar() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-medium">Payment Gateway</h3>
-                      <p className="text-sm text-gray-600">Collect payments on your website/app</p>
+                      <h3 className="font-medium">UPI</h3>
+                      <p className="text-sm text-gray-600"> Fast and secure real-time payments.</p>
+                    </div>
+                  </div>
+
+
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <svg
+                        className="w-5 h-5 text-[#0870e7]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium">Credit & Debit Cards</h3>
+                      <p className="text-sm text-gray-600">Widely preferred for online shopping and services.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <svg
+                        className="w-5 h-5 text-[#0870e7]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium">Wallets</h3>
+                      <p className="text-sm text-gray-600">Popular digital wallets like Paytm, Amazon Pay, and Google Pay.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <svg
+                        className="w-5 h-5 text-[#0870e7]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                      </svg>
+                    </div>
+                    
+                  
+                    <div className="group">
+                    <Link href="/paymentlink"> <h3 className="font-medium">Payment Links</h3>     </Link>
+                      <p className="text-sm text-gray-600">Share links for instant payments, even without a website.</p>
+                    </div>
+                  </div>
+             
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <svg
+                        className="w-5 h-5 text-[#0870e7]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium">Net Banking</h3>
+                      <p className="text-sm text-gray-600">Convenient direct bank transfers.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <svg
+                        className="w-5 h-5 text-[#0870e7]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium">EMI Options</h3>
+                      <p className="text-sm text-gray-600">Enable easy installment-based payments for high-value orders.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <svg
+                        className="w-5 h-5 text-[#0870e7]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                      </svg>
+                    </div>
+                    <div>
+                    <Link href="/qrcode">  <h3 className="font-medium">QR Codes</h3></Link>
+                      <p className="text-sm text-gray-600">Simplify in-person payments with quick scanning.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <svg
+                        className="w-5 h-5 text-[#0870e7]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium">Pre-built Payment Forms</h3>
+                      <p className="text-sm text-gray-600">Ready-to-use forms that make collecting payments simple and hassle-free.</p>
                     </div>
                   </div>
                 </div>
@@ -131,7 +278,7 @@ export default function Navbar() {
           <Button variant="ghost" className="hidden lg:flex">
             Sign in
           </Button></Link>
-          <Button className="bg-[#0870e7] hover:bg-[#3b6fab]">Create Account</Button>
+          <Link href='/signup'> <Button className="bg-[#0870e7] hover:bg-[#3b6fab]">Create Account</Button></Link>
         </div>
       </div>
     </header>)
