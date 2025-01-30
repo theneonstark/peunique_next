@@ -2,6 +2,8 @@ import React from "react";
 import { WavyBackground } from "./ui/wavy-background";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator"
+
 
 export function WavyBackgroundDemo() {
   return (
@@ -19,9 +21,10 @@ export function WavyBackgroundDemo() {
               </h1>
               <div className="flex flex-wrap gap-4 items-center mt-4">
                 <h2>Simplify Online Payments</h2>
-                <span className="mx-2 hidden sm:inline">|</span>
+                  <Separator orientation="vertical" />
+            
                 <h2>Secure Transactions</h2>
-                <span className="mx-2 hidden sm:inline">|</span>
+                <Separator orientation="vertical" />
                 <h2>Transparent Pricing</h2>
               </div>
               <div className="flex items-center gap-4 mt-6">
